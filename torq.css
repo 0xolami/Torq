@@ -1,0 +1,252 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body */
+body {
+    background: linear-gradient(160deg, #184b69, #4e2f96);
+    color: #fff;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.navbar .logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #53a0cc;
+    text-shadow: 0 0 8px #7fbbdd;
+}
+
+.nav-links a {
+    margin-right: 2rem;
+    text-decoration: none;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #5595b9;
+    text-shadow: 0 0 6px #469ed1;
+}
+
+#wallet-btn {
+    background: #89bfdf;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 0 10px #2a7cac;
+    transition: 0.3s;
+}
+
+#wallet-btn:hover {
+    transform: scale(1.05);
+}
+
+/* Hero */
+.hero {
+    text-align: center;
+    padding: 6rem 2rem;
+    backdrop-filter: blur(10px);
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    color: #fff;
+    text-shadow: 0 0 10px #184b69;
+}
+
+.hero p {
+    color: #aaa;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+}
+
+.hero-buttons button {
+    background: #2d7299;
+    border: none;
+    padding: 1rem 2rem;
+    margin-right: 1rem;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 0 15px #2a6d94;
+    transition: 0.3s;
+}
+
+.hero-buttons button:hover {
+    transform: scale(1.05);
+}
+
+.hero-buttons .outline {
+    background: transparent;
+    border: 2px solid #3e799b;
+    color: #fff;
+}
+
+/* Bounties Section */
+.bounties {
+    padding: 4rem 2rem;
+}
+
+.bounties h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    text-shadow: 0 0 10px #184b69;
+}
+
+.bounty-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+/* Bounty Card */
+.bounty-card {
+    background: rgba(20, 20, 30, 0.8);
+    padding: 1.5rem;
+    border-radius: 16px;
+    backdrop-filter: blur(10px);
+    border: 1px solid #184b69;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.bounty-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #184b69;
+}
+
+.bounty-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    color: #5cdee7;
+    text-shadow: 0 0 5px #184b69;
+}
+
+.bounty-card p {
+    color: #aaa;
+    margin-bottom: 1rem;
+}
+
+.bounty-card .reward {
+    color: #184b69;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.bounty-card button {
+    background: #184b69;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 0 10px #184b69;
+}
+
+.bounty-card button:hover {
+    transform: scale(1.05);
+}
+
+#grid-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: repeating-linear-gradient(0deg,
+            rgba(0, 255, 255, 0.05),
+            rgba(0, 255, 255, 0.05) 1px,
+            transparent 1px,
+            transparent 20px),
+        repeating-linear-gradient(90deg,
+            rgba(255, 0, 255, 0.05),
+            rgba(255, 0, 255, 0.05) 1px,
+            transparent 1px,
+            transparent 20px);
+    animation: moveGrid 20s linear infinite;
+    z-index: -1;
+    /* behind everything */
+}
+
+@keyframes moveGrid {
+    0% {
+        background-position: 0 0, 0 0;
+    }
+
+    100% {
+        background-position: 1000px 1000px, 1000px 1000px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .navbar {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .glass-container {
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 0.95rem;
+    }
+
+    .hero-buttons button {
+        padding: 0.6rem 1rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 1.6rem;
+    }
+
+    .hero p {
+        font-size: 0.85rem;
+    }
+
+    .bounty-card {
+        padding: 0.8rem;
+    }
+
+    .hero-buttons button {
+        padding: 0.5rem 0.8rem;
+        font-size: 0.85rem;
+    }
+
+    .nav-links a {
+        margin: 0.3rem;
+        font-size: 0.85rem;
+    }
+}

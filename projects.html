@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TORQ - Project Dashboard</title>
+    <link rel="icon" type="img" href="./torq.png">
+    <link rel="stylesheet" href="torq.css">
+</head>
+
+<body>
+    <div id="grid-bg"></div>
+    <nav class="navbar">
+        <div class="logo">TORQ</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="creators.html">Creators</a>
+            <a href="projects.html">Dashboard</a>
+            <a href="leaderboard.html">Leaderboard</a>
+        </div>
+        <button id="wallet-btn">Connect Wallet</button>
+    </nav>
+
+    <section class="hero">
+        <h1>Project Dashboard</h1>
+        <p>Post bounties and manage submissions.</p>
+    </section>
+
+    <section class="new-bounty">
+        <h2>Post New Bounty</h2>
+        <input type="text" id="task-name" placeholder="Task Name">
+        <input type="number" id="task-reward" placeholder="Reward USDC">
+        <button id="add-bounty">Add Bounty</button>
+    </section>
+
+    <section class="bounties">
+        <h2>Active Bounties</h2>
+        <div class="bounty-container" id="project-bounties"></div>
+    </section>
+
+    <script src="project.js"></script>
+</body>
+
+</html>

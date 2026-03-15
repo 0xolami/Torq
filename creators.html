@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TORQ - Creator Dashboard</title>
+    <link rel="icon" type="img" href="./torq.png">
+    <link rel="stylesheet" href="torq.css">
+</head>
+
+<body>
+    <div id="grid-bg"></div>
+    <nav class="navbar">
+        <div class="logo">TORQ</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="creators.html">Dashboard</a>
+            <a href="projects.html">Projects</a>
+            <a href="leaderboard.html">Leaderboard</a>
+        </div>
+        <button id="wallet-btn">Connect Wallet</button>
+    </nav>
+
+    <section class="hero">
+        <h1>Creator Dashboard</h1>
+        <p>Claim bounties and track your earnings in USDC.</p>
+    </section>
+
+    <section class="bounties">
+        <h2>Available Bounties</h2>
+        <div class="bounty-container" id="creator-bounties"></div>
+    </section>
+
+    <section class="earnings">
+        <h2>Total Earnings: <span id="total-earnings">0</span> USDC</h2>
+    </section>
+
+    <script src="creators.js"></script>
+</body>
+
+</html>

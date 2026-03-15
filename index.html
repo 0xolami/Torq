@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TORQ - Web3 Creator Marketplace</title>
+    <link rel="icon" type="img" href="./torq.png">
+    <link rel="stylesheet" href="torq.css">
+</head>
+
+<body>
+    <div id="grid-bg"></div>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">TORQ</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="creators.html">Creators</a>
+            <a href="projects.html">Projects</a>
+            <a href="leaderboard.html">Leaderboard</a>
+        </div>
+        <button id="wallet-btn">Connect Wallet</button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Web3 Creator Economy</h1>
+        <p>Connect with projects on Solana, claim bounties, and earn USDC.</p>
+        <div class="hero-buttons">
+            <a href="creators.html"><button>Explore Bounties</button></a>
+            <a href="projects.html"><button class="outline">Post Campaign</button></a>
+        </div>
+    </section>
+
+    <!-- Bounties Section -->
+    <section class="bounties" id="bounties">
+        <h2>Trending Bounties</h2>
+        <div class="bounty-container" id="bounty-container"></div>
+    </section>
+
+    <script src="torq.js"></script>
+</body>
+
+</html>
